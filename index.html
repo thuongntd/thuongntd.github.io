@@ -1,13 +1,312 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn Móc Len: Quả Cầu Lông & Vợt Tai Mèo</title>
+    <style>
+        :root {
+            --primary-blue: #8eb2d1;
+            --primary-pink: #f4c2c2;
+            --primary-mint: #a2c4c9;
+            --bg-color: #faf8f5;
+            --text-dark: #333333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: var(--primary-mint);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .result-image {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .result-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .legend {
+            background-color: #f9f9f9;
+            border-left: 4px solid var(--primary-blue);
+            padding: 15px 20px;
+            margin-bottom: 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .legend h3 {
+            margin-bottom: 10px;
+            color: var(--primary-blue);
+        }
+
+        .legend ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .legend li {
+            font-size: 14px;
+        }
+
+        .legend li strong {
+            display: inline-block;
+            width: 45px;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: var(--text-dark);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-pink h2 {
+            border-bottom-color: var(--primary-pink);
+        }
+        .section-pink h2::before {
+            content: "🌸";
+        }
+
+        .section-blue h2 {
+            border-bottom-color: var(--primary-blue);
+        }
+        .section-blue h2::before {
+            content: "🏸";
+        }
+
+        .step-box {
+            margin-bottom: 20px;
+        }
+
+        .step-box h4 {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+            background: #f0f0f0;
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 15px;
+        }
+
+        .step-list {
+            list-style: none;
+            border-left: 2px dashed #ddd;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .step-list li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+
+        .step-list li::before {
+            content: "";
+            position: absolute;
+            left: -27px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background-color: var(--primary-blue);
+            border-radius: 50%;
+        }
+
+        .section-pink .step-list li::before {
+            background-color: var(--primary-pink);
+        }
+
+        .note {
+            background-color: #fff9e6;
+            border-left: 4px solid #f2c94c;
+            padding: 12px;
+            font-size: 14px;
+            margin-top: 15px;
+            border-radius: 0 4px 4px 0;
+            color: #666;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            font-size: 13px;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
 <body>
 
-<h2>The href Attribute</h2>
+<div class="container">
+    <div class="header">
+        <h1>Hướng Dẫn Móc Len</h1>
+        <p>Bộ đôi Quả Cầu Lông & Vợt Tai Mèo Đáng Yêu</p>
+    </div>
 
-<p>HTML links are defined with the a tag. The link address is specified in the href attribute:</p>
+    <div class="content">
+        <!-- Hình ảnh thành phẩm -->
+        <div class="result-image">
+            <img src="./assets/vot-tai-meo.jpeg" alt="Thành phẩm Vợt Tai Mèo và Quả Cầu Lông">
+            <p style="font-size: 14px; color: #888; margin-top: 10px;"><i>Thành phẩm của dự án (Vui lòng đặt file html cùng thư mục với ảnh IMG_8220.jpeg)</i></p>
+        </div>
 
-<a href="https://www.w3schools.com">Visit W3Schools</a>
-<iframe referrerpolicy="unsafe-url" width="100%" height="500px" src="http://localhost:3000/page/recipes?page=1" title="description"></iframe>
+        <!-- Bảng ký hiệu -->
+        <div class="legend">
+            <h3>Ký hiệu cơ bản</h3>
+            <ul>
+                <li><strong>X</strong> Mũi đơn</li>
+                <li><strong>V</strong> Mũi tăng (2 mũi X chung chân)</li>
+                <li><strong>A</strong> Mũi giảm (2 mũi X chụm đầu)</li>
+                <li><strong>CH</strong> Mũi bính (mũi móc xích)</li>
+                <li><strong>BLO</strong> Móc vào nửa cạnh trong</li>
+                <li><strong>F</strong> Mũi kép đơn</li>
+            </ul>
+        </div>
+
+        <!-- PHẦN 1: QUẢ CẦU LÔNG -->
+        <div class="section-pink">
+            <h2>Phần 1: Quả Cầu Lông</h2>
+            
+            <div class="step-box">
+                <h4>Đế cầu (Màu tùy chọn)</h4>
+                <ul class="step-list">
+                    <li><strong>R1:</strong> Tạo vòng tròn ma thuật, móc 6X (6)</li>
+                    <li><strong>R2:</strong> 6V (12)</li>
+                    <li><strong>R3:</strong> (1X, 1V) lặp lại 6 lần (18)</li>
+                    <li><strong>R4:</strong> (2X, 1V) lặp lại 6 lần (24)</li>
+                    <li><strong>R5 - R7:</strong> Móc 24X không tăng giảm</li>
+                    <li><strong>R8:</strong> Đổi sang màu len viền, móc 24X. Cắt len, chốt mũi.</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Lông vũ (Màu trắng)</h4>
+                <ul class="step-list">
+                    <li><strong>Bước 1:</strong> Tạo phần chóp lông vũ bằng cách lặp lại 4 hàng từ <strong>R1 đến R4</strong> giống hệt như phần đế cầu ở trên (Ra được 24 mũi).</li>
+                    <li><strong>Bước 2 (R5):</strong> Đổi sang len màu trắng, móc toàn bộ vào cạnh trong của mũi (<strong>BLO</strong>). Móc theo sơ đồ họa tiết ren (chart hình).</li>
+                    <li><strong>Bước 3:</strong> Móc tiếp các hàng họa tiết mạng nhện của lông vũ theo chart.</li>
+                    <li><strong>Hoàn thiện:</strong> Sau khi móc xong và cắt len, lấy phần đế cầu và phần lông vũ khâu ráp lại với nhau. Có thể nhồi một chút bông vào giữa để đế cầu phồng đẹp.</li>
+                </ul>
+                <div class="note">
+                    <strong>Ghi chú họa tiết:</strong> Mũi kép đơn (F) ở giữa sơ đồ: Đâm kim nằm ngang xuyên qua chân mũi để móc một mũi kép đơn, thao tác tương tự như móc mũi kép đơn ngoặc trước (FPdc) để tạo đường gân nổi cho cánh lông vũ.
+                </div>
+            </div>
+        </div>
+
+        <!-- PHẦN 2: VỢT CẦU LÔNG TAI MÈO -->
+        <div class="section-blue">
+            <h2>Phần 2: Vợt Cầu Lông Tai Mèo</h2>
+
+            <div class="step-box">
+                <h4>Cán vợt & Khung vợt</h4>
+                <ul class="step-list">
+                    <li><strong>Hàng 1:</strong> (Bắt đầu với len màu xanh dương nhạt) Tạo vòng tròn ma thuật, móc 6X (6)</li>
+                    <li><strong>Hàng 2:</strong> 6V (12)</li>
+                    <li><strong>Hàng 3:</strong> Móc vào cạnh trong (<strong>BLO</strong>) 12X (12)</li>
+                    <li><strong>Hàng 4 - 13:</strong> Móc 12X (12)</li>
+                    <li><strong>Hàng 14:</strong> Đổi sang len màu trắng, móc 12X (12)</li>
+                    <li><strong>Hàng 15:</strong> (2X, 1A) lặp lại 3 lần (9)</li>
+                    <li><strong>Hàng 16:</strong> (1X, 1A) lặp lại 3 lần (6)</li>
+                    <li><strong>Hàng 17 - 18:</strong> Móc 6X (6)</li>
+                    <li><strong>Hàng 19 - 75:</strong> Đổi sang len màu xanh lơ/xanh ngọc. Móc liên tục 6X ở mỗi hàng. Phần này sẽ kéo dài thành một dải ống. Khi hoàn thành, uốn cong dải ống này lại thành vòng tròn để tạo khung mặt vợt.</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Viền chỗ nối khung vợt (Cổ vợt)</h4>
+                <p style="font-size: 14px; margin-bottom: 10px; color: #666;">(Móc lật mặt qua lại từng hàng)</p>
+                <ul class="step-list">
+                    <li><strong>Hàng 1:</strong> Lên 4 bính (4 CH). Bắt đầu móc từ mũi thứ 2 tính từ kim móc xuống: 3X</li>
+                    <li><strong>Hàng 2:</strong> Lên bính lật mặt, 1V, 1X, 1V (5)</li>
+                    <li><strong>Hàng 3 - 9:</strong> Móc 5X (5)</li>
+                    <li><strong>Hàng 10:</strong> 1A, 1X, 1A (3)</li>
+                    <li><strong>Hàng 11:</strong> Móc 3X (3). Cắt len, dùng miếng này bọc quanh chỗ nối giữa cán và khung vợt rồi khâu cố định.</li>
+                </ul>
+            </div>
+
+            <div class="step-box">
+                <h4>Tai mèo (Làm 2 chiếc)</h4>
+                <p style="font-size: 14px; margin-bottom: 10px; color: #666;">(Lòng tai màu hồng, viền màu xanh)</p>
+                <ul class="step-list">
+                    <li><strong>Hàng 1:</strong> Lên 7 bính (7 CH). Bắt đầu móc từ mũi thứ 2 tính từ kim móc: 4X, 1A</li>
+                    <li><strong>Hàng 2:</strong> Lên 1 CH, lật mặt, 1A, 3X</li>
+                    <li><strong>Hàng 3:</strong> Lên 1 CH, lật mặt, 1A, 2X</li>
+                    <li><strong>Hàng 4:</strong> Lên 1 CH, lật mặt, 1A, 1X</li>
+                    <li><strong>Hàng 5:</strong> Lên 1 CH, lật mặt, 1A. Cắt len.</li>
+                    <li><strong>Hàng 6 (Viền tai):</strong> Đổi sang len màu xanh của khung vợt, móc 1 vòng các mũi đơn (X) xung quanh toàn bộ rìa tai mèo để tạo viền.</li>
+                </ul>
+                <div class="note">
+                    Khâu 2 tai mèo lên đỉnh của khung vợt. Dùng chỉ trắng mỏng (hoặc sợi cotton chẻ nhỏ) để đan chéo phần lưới bên trong mặt khung vợt như hình thành phẩm.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="footer">
+        <p>Chúc bạn thực hiện thành công dự án móc len đáng yêu này!</p>
+    </div>
+</div>
 
 </body>
 </html>
